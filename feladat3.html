@@ -19,10 +19,10 @@
 
             var a = parseFloat(document.getElementById('aOldal').value)
             var b = parseFloat(document.getElementById('bOldal').value)
-            var c = parseFloat(document.getElementById('bOldal').value)
+            var c = parseFloat(document.getElementById('cOldal').value)
 
-            var K = (a + b + c);
-            var s = (a + b + c) / 2;
+            var K = a + b + c;
+            var s = K / 2;
             var T = Math.sqrt( s * (s - a) * (s - b) * (s - c) );
 
             document.getElementById('teruletKiir').innerHTML = K;
